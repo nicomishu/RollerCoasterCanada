@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/RollerCoasterCanada.loader.js";
+      var loaderUrl = buildUrl + "/roller-coaster-canada.loader.js";
       var config = {
-        dataUrl: buildUrl + "/RollerCoasterCanada.data.unityweb",
-        frameworkUrl: buildUrl + "/RollerCoasterCanada.framework.js.unityweb",
-        codeUrl: buildUrl + "/RollerCoasterCanada.wasm.unityweb",
+        dataUrl: buildUrl + "/roller-coaster-canada.data.unityweb",
+        frameworkUrl: buildUrl + "/roller-coaster-canada.framework.js.unityweb",
+        codeUrl: buildUrl + "/roller-coaster-canada.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "The Super Challenge",
         productName: "Roller Coaster Canada",
@@ -98,6 +98,7 @@
         canvas.style.height = "640px";
       }
 
+      canvas.style.background = "url('" + buildUrl + "/roller-coaster-canada.jpg.unityweb') center / cover";
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
